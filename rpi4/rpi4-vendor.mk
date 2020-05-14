@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/vendor/lib/hw/hwcomposer.rpi4.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.rpi4.so \
     vendor/brcm/rpi4/proprietary/vendor/lib/hw/gralloc.rpi4.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.rpi4.so
 
+PRODUCT_COPY_FILES += \
+    vendor/brcm/rpi4/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service.rpi4:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service.rpi4 \
+    vendor/brcm/rpi4/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service.rpi4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service.rpi4.rc
+
 #PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/vendor/lib/hw/audio.primary.rpi4.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.rpi4.so \
     vendor/brcm/rpi4/proprietary/vendor/lib/hw/memtrack.rpi4.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.rpi4.so \
