@@ -1,0 +1,21 @@
+# Kernel
+kernel=zImage
+device_tree=bcm2711-rpi-4-b.dtb
+dtoverlay=vc4-kms-v3d-pi4
+initramfs ramdisk.img 0x01f00000
+enable_uart=1
+gpu_mem=128
+
+# Audio
+dtparam=audio=on
+audio_pwm_mode=2
+disable_audio_dither=1
+hdmi_ignore_edid_audio=1
+
+# Display
+hdmi_force_hotplug=1
+hdmi_drive=2
+hdmi_group=0
+
+#over_voltage=2
+#arm_freq=1750
