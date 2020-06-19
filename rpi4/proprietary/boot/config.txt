@@ -6,5 +6,5 @@ dtoverlay=vc4-kms-v3d-pi4
 initramfs ramdisk.img 0x01f00000
 enable_uart=1
 
-#over_voltage=2
-#arm_freq=1750
+over_voltage=2
+arm_freq=1750
