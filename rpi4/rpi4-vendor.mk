@@ -22,21 +22,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:root/lib/firmware/brcm/brcmfmac43455-sdio.bin \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.clm_blob:root/lib/firmware/brcm/brcmfmac43455-sdio.clm_blob \
-    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:root/lib/firmware/brcm/brcmfmac43455-sdio.txt
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:root/lib/firmware/brcm/brcmfmac43455-sdio.txt \
+    vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db:root/lib/firmware/regulatory.db \
+    vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db.p7s:root/lib/firmware/regulatory.db.p7s
 
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.bin \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.clm_blob:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.clm_blob \
-    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.txt
-
-#PRODUCT_COPY_FILES += \
-    vendor/brcm/rpi4/proprietary/vendor/firmware/brcm/BCM4345C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/BCM4345C0.hcd \
-    vendor/brcm/rpi4/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service.rpi4:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service.rpi4 \
-    vendor/brcm/rpi4/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service.rpi4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service.rpi4.rc \
-    vendor/brcm/rpi4/proprietary/vendor/bin/btuart:$(TARGET_COPY_OUT_VENDOR)/bin/btuart
-
-#PRODUCT_COPY_FILES += \
-    vendor/brcm/rpi4/proprietary/vendor/lib/hw/camera.rpi4.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.rpi4.so
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.txt \
+    vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db \
+    vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db.p7s
 
 
 
