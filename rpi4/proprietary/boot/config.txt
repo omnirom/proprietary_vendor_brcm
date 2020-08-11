@@ -1,7 +1,13 @@
 kernel=Image
 device_tree=bcm2711-rpi-4-b.dtb
+
+# audio
 dtparam=audio=on
-dtoverlay=vc4-kms-v3d-pi4
+hdmi_force_edid_audio=1
+
+# disable kms audio path and force bcm2835 card  0 = hdmi card 1 = headphone jack
+dtoverlay=vc4-kms-v3d-pi4,noaudio
+
 dtoverlay=dwc2,dr_mode=peripheral
 initramfs ramdisk.img 0x01f00000
 enable_uart=1
