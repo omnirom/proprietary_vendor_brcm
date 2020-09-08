@@ -1,5 +1,7 @@
 kernel=Image
+initramfs ramdisk.img 0x01f00000
 device_tree=bcm2711-rpi-4-b.dtb
+arm_64bit=1
 
 # audio
 dtparam=audio=on
@@ -8,9 +10,18 @@ hdmi_force_edid_audio=1
 # disable kms audio path and force bcm2835 card  0 = hdmi card 1 = headphone jack
 dtoverlay=vc4-kms-v3d-pi4,noaudio
 
+# usb adb
 dtoverlay=dwc2,dr_mode=peripheral
-initramfs ramdisk.img 0x01f00000
+
+# booting from sdcard
+dtoverlay=rpi-android-sdcard
+
+# booting from usb
+#dtoverlay=rpi-android-usb
+
+# serial console
 enable_uart=1
+
+# oc
 over_voltage=2
 arm_freq=1750
-arm_64bit=1
