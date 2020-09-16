@@ -17,13 +17,12 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/brcm/rpi4
 
-# brcmfmac43455 files are included in kernel
-
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/brcm/rpi4/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
     vendor/brcm/rpi4/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
-    vendor/brcm/rpi4/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so
+    vendor/brcm/rpi4/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
+    vendor/brcm/rpi4/proprietary/vendor/usr/idc/ADS7846_Touchscreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/ADS7846_Touchscreen.idc
 
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:root/lib/firmware/brcm/brcmfmac43455-sdio.bin \
