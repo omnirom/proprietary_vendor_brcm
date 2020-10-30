@@ -1,0 +1,35 @@
+kernel=Image-recovery
+initramfs ramdisk-recovery.img followkernel
+device_tree=bcm2711-rpi-4-b.dtb
+arm_64bit=1
+
+# audio
+dtparam=audio=on
+hdmi_force_edid_audio=1
+
+hdmi_force_hotplug=1
+hdmi_drive=2
+hdmi_group=2
+hdmi_mode=28
+disable_overscan=1
+
+# usb adb
+dtoverlay=dwc2,dr_mode=peripheral
+
+# booting from sdcard
+dtoverlay=rpi-android-sdcard
+
+# booting from usb
+#dtoverlay=rpi-android-usb
+
+# serial console
+enable_uart=1
+
+# SPI
+dtparam=spi=on
+
+# I2C
+dtparam=i2c_arm=on
+
+# I2S
+#dtparam=i2s=on
