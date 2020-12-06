@@ -1,7 +1,6 @@
 # normal boot
 kernel=Image
 initramfs ramdisk.img followkernel
-
 device_tree=bcm2711-rpi-4-b.dtb
 arm_64bit=1
 
@@ -33,10 +32,14 @@ dtparam=i2c_arm=on
 # I2S
 #dtparam=i2s=on
 
-# oc
+# max oc - can be adjusted in rom during runtime
 over_voltage=2
 arm_freq=1750
 
+# gpio fan - start 55 deg stop 45 deg
+#dtoverlay=gpio-fan,gpiopin=12,temp=55000
+
+# pi camera
 #gpu_mem=256
 #start_x=1
 
