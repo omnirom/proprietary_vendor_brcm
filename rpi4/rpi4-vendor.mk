@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:root/lib/firmware/brcm/brcmfmac43455-sdio.bin \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.clm_blob:root/lib/firmware/brcm/brcmfmac43455-sdio.clm_blob \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:root/lib/firmware/brcm/brcmfmac43455-sdio.txt \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.bin:root/lib/firmware/brcm/brcmfmac43456-sdio.bin \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.clm_blob:root/lib/firmware/brcm/brcmfmac43456-sdio.clm_blob \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.txt:root/lib/firmware/brcm/brcmfmac43456-sdio.txt \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db:root/lib/firmware/regulatory.db \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db.p7s:root/lib/firmware/regulatory.db.p7s
 
@@ -39,6 +42,9 @@ PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.bin \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.clm_blob:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.clm_blob \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.txt:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43455-sdio.txt \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43456-sdio.bin \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.clm_blob:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43456-sdio.clm_blob \
+    vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43456-sdio.txt:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/brcm/brcmfmac43456-sdio.txt \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db.p7s
 
