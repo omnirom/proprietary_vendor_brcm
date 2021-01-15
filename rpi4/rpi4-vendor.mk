@@ -48,5 +48,8 @@ PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db \
     vendor/brcm/rpi4/proprietary/root/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/regulatory.db.p7s
 
-
-
+PRODUCT_COPY_FILES += \
+    vendor/brcm/rpi4/proprietary/root/firmware/mediatek/mt7610u.bin:root/lib/firmware/mediatek/mt7610u.bin \
+    vendor/brcm/rpi4/proprietary/root/firmware/mediatek/mt7610u.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/mediatek/mt7610u.bin \
+    vendor/brcm/rpi4/proprietary/root/firmware/rt2870.bin:root/lib/firmware/rt2870.bin \
+    vendor/brcm/rpi4/proprietary/root/firmware/rt2870.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/rt2870.bin
