@@ -20,6 +20,7 @@ hdmi_force_edid_audio=1
 [gpio21=1]
 dtoverlay=vc4-kms-v3d-pi4,noaudio
 disable_fw_kms_setup=1
+dtoverlay=cma,cma-384
 [gpio21=0]
 hdmi_force_hotplug=1
 hdmi_drive=2
