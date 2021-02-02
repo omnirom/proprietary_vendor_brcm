@@ -5,13 +5,16 @@ arm_64bit=1
 
 # audio
 dtparam=audio=on
-hdmi_force_edid_audio=1
 
+[HDMI:0]
+[HDMI:1]
+hdmi_force_edid_audio=1
 hdmi_force_hotplug=1
 hdmi_drive=2
 hdmi_group=2
 hdmi_mode=28
 disable_overscan=1
+[all]
 
 # usb adb
 dtoverlay=dwc2,dr_mode=peripheral
