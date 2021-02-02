@@ -6,7 +6,11 @@ arm_64bit=1
 
 # audio
 dtparam=audio=on
+
+[HDMI:0]
+[HDMI:1]
 hdmi_force_edid_audio=1
+[all]
 
 # disable kms audio path and force bcm2835 card  0 = hdmi card 1 = headphone jack
 dtoverlay=vc4-kms-v3d-pi4,noaudio
