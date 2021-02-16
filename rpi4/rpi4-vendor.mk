@@ -26,7 +26,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/vendor/usr/idc/ADS7846_Touchscreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/ADS7846_Touchscreen.idc \
     vendor/brcm/rpi4/proprietary/vendor/usr/idc/Vendor_0483_Product_5750.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_0483_Product_5750.idc \
-    vendor/brcm/rpi4/proprietary/vendor/usr/idc/Vendor_222a_Product_0001.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_222a_Product_0001.idc
+    vendor/brcm/rpi4/proprietary/vendor/usr/idc/Vendor_222a_Product_0001.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_222a_Product_0001.idc \
+    vendor/brcm/rpi4/proprietary/vendor/usr/idc/Vendor_0461_Product_0022.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_0461_Product_0022.idc    
 
 PRODUCT_COPY_FILES += \
     vendor/brcm/rpi4/proprietary/root/firmware/brcm/brcmfmac43455-sdio.bin:root/lib/firmware/brcm/brcmfmac43455-sdio.bin \
