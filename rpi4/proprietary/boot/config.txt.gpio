@@ -37,10 +37,10 @@ disable_overscan=1
 dtoverlay=dwc2,dr_mode=peripheral
 
 # booting from sdcard
-dtoverlay=rpi-android-sdcard
+#dtoverlay=rpi-android-sdcard
 
 # booting from usb
-#dtoverlay=rpi-android-usb
+dtoverlay=rpi-android-usb
 
 # serial console
 enable_uart=1
@@ -59,7 +59,7 @@ over_voltage=2
 arm_freq=1750
 
 # gpio fan - start 55 deg stop 45 deg
-#dtoverlay=gpio-fan,gpiopin=12,temp=55000
+dtoverlay=gpio-fan,gpiopin=12,temp=55000
 
 # pi camera
 #gpu_mem=256

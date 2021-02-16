@@ -19,10 +19,10 @@ disable_overscan=1
 dtoverlay=dwc2,dr_mode=peripheral
 
 # booting from sdcard
-dtoverlay=rpi-android-sdcard
+#dtoverlay=rpi-android-sdcard
 
 # booting from usb
-#dtoverlay=rpi-android-usb
+dtoverlay=rpi-android-usb
 
 # serial console
 enable_uart=1
