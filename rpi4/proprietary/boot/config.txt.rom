@@ -20,10 +20,10 @@ disable_fw_kms_setup=1
 dtoverlay=dwc2,dr_mode=peripheral
 
 # booting from sdcard
-dtoverlay=rpi-android-sdcard
+dtoverlay=android-sdcard
 
 # booting from usb
-#dtoverlay=rpi-android-usb
+#dtoverlay=android-usb
 
 # serial console
 enable_uart=1
