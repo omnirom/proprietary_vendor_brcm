@@ -1,6 +1,5 @@
 kernel=Image-recovery
 initramfs ramdisk-recovery.img followkernel
-device_tree=bcm2711-rpi-4-b.dtb
 arm_64bit=1
 
 # audio
@@ -17,6 +16,9 @@ disable_overscan=1
 
 # usb adb
 dtoverlay=dwc2,dr_mode=peripheral
+[cm4]
+dtoverlay=dwc2,dr_mode=host
+[all]
 
 # booting from sdcard
 dtoverlay=rpi-android-sdcard
