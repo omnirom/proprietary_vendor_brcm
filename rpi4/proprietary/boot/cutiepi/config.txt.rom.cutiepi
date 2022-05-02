@@ -17,37 +17,29 @@ dtoverlay=vc4-kms-v3d
 # Automatically load overlays for detected DSI displays
 display_auto_detect=1
 
-# usb adb
-dtoverlay=dwc2,dr_mode=peripheral
-[cm4]
-dtoverlay=dwc2,dr_mode=host
-[all]
-
 # booting from sdcard
-#dtoverlay=rpi-android-sdcard
-
-# booting from usb
-dtoverlay=rpi-android-usb
+dtoverlay=rpi-android-sdcard
 
 # serial console
 enable_uart=1
 
-# SPI
-dtparam=spi=on
-
 # I2C
 dtparam=i2c_arm=on
 
-# I2S
-#dtparam=i2s=on
-
 # max oc - can be adjusted in rom during runtime
-over_voltage=2
-arm_freq=1750
+#over_voltage=2
+#arm_freq=1750
 
-# gpio fan - start 55 deg stop 45 deg
-#dtoverlay=gpio-fan,gpiopin=12,temp=55000
+[cm4]
+# Enable host mode on the 2711 built-in XHCI USB controller.
+# This line should be removed if the legacy DWC2 controller is required
+# (e.g. for USB device mode) or if USB support is not required.
+otg_mode=1
+avoid_warnings=2
 
-# pi camera
-#gpu_mem=256
-#start_x=1
+dtoverlay=cutiepi-panel
+dtoverlay=uart1
+dtoverlay=i2c5,pins_10_11
+dtoverlay=mpu6050-i2c5,interrupt=27
+
+[all]

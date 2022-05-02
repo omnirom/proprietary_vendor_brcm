@@ -1,4 +1,4 @@
-kernel=Image-recovery
+kernel=Image
 initramfs ramdisk-recovery.img followkernel
 arm_64bit=1
 
@@ -8,11 +8,12 @@ dtparam=audio=on
 [HDMI:0]
 [HDMI:1]
 hdmi_force_edid_audio=1
-hdmi_force_hotplug=1
-hdmi_drive=2
-#hdmi_safe=1
-disable_overscan=1
 [all]
+
+dtoverlay=vc4-kms-v3d
+
+# Automatically load overlays for detected DSI displays
+display_auto_detect=1
 
 # usb adb
 dtoverlay=dwc2,dr_mode=peripheral
@@ -31,3 +32,4 @@ dtparam=i2c_arm=on
 
 # I2S
 #dtparam=i2s=on
+

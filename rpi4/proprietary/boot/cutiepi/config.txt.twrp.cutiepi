@@ -1,0 +1,33 @@
+kernel=Image
+initramfs ramdisk-recovery-portrait.img followkernel
+arm_64bit=1
+
+# audio
+dtparam=audio=on
+
+[HDMI:0]
+[HDMI:1]
+hdmi_force_edid_audio=1
+[all]
+
+dtoverlay=vc4-kms-v3d
+
+# Automatically load overlays for detected DSI displays
+display_auto_detect=1
+
+# serial console
+enable_uart=1
+
+# I2C
+dtparam=i2c_arm=on
+
+[cm4]
+# Enable host mode on the 2711 built-in XHCI USB controller.
+# This line should be removed if the legacy DWC2 controller is required
+# (e.g. for USB device mode) or if USB support is not required.
+otg_mode=1
+avoid_warnings=2
+
+dtoverlay=cutiepi-panel
+dtoverlay=uart1
+[all]
