@@ -1,1 +1,1 @@
-console=tty1 root=/dev/ram0 rootwait spidev.bufsiz=65536 androidboot.hardware=rpi4 androidboot.selinux=permissive cgroup_enable=memory cgroup_memory=1 androidboot.boot_devices=emmc2bus/fe340000.emmc2,scb/fd500000.pcie androidboot.rpi4.device=cutiepi
+console=tty1 root=/dev/ram0 rootwait androidboot.hardware=rpi4 androidboot.selinux=permissive androidboot.rpi4.device=cutiepi
