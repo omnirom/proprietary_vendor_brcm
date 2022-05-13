@@ -51,3 +51,5 @@ arm_freq=1750
 # pi camera
 #gpu_mem=256
 #start_x=1
+#camera_auto_detect=1
+

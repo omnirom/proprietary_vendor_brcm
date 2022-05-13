@@ -42,4 +42,10 @@ dtoverlay=uart1
 dtoverlay=i2c5,pins_10_11
 dtoverlay=mpu6050-i2c5,interrupt=27
 
+# camera 
+start_x=1
+gpu_mem=128
+dtoverlay=ov5647
+camera_auto_detect=1
+
 [all]
