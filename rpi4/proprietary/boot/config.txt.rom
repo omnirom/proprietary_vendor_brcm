@@ -41,9 +41,8 @@ dtparam=i2c_arm=on
 # I2S
 #dtparam=i2s=on
 
-# max oc - can be adjusted in rom during runtime
-over_voltage=2
-arm_freq=1750
+# max oc - can be adjusted in rom during runtime (default to 1500)
+#arm_freq=1800
 
 # gpio fan - start 55 deg stop 45 deg
 #dtoverlay=gpio-fan,gpiopin=12,temp=55000
