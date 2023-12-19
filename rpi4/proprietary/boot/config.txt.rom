@@ -36,7 +36,7 @@ enable_uart=1
 dtparam=spi=on
 
 # I2C
-dtparam=i2c_arm=on
+dtparam=i2c_arm=off
 
 # I2S
 #dtparam=i2s=on
@@ -48,7 +48,5 @@ dtparam=i2c_arm=on
 #dtoverlay=gpio-fan,gpiopin=12,temp=55000
 
 # pi camera
-#gpu_mem=256
-#start_x=1
-#camera_auto_detect=1
+camera_auto_detect=1
 
